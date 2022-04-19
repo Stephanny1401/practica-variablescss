@@ -1,0 +1,163 @@
+:root{
+	--fondo-header:#1b1e20 ;
+	--color-primario:#088d48;
+	--color-secundario:#B1B2C9;
+	--color-primario-hover:#1825ba ;
+	--color-secundario-hover:#55566c ;
+}
+
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #F5F7FB;
+    color:#fff;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+   
+.contenedor{
+    width: 90%;
+    max-width: 	1000px;
+    /* margin: auto;*/
+
+}
+
+/*------------HEADER----*/
+header {
+	min-height: 40vh;
+	background: var(--fondo-header);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+header .logotipo {
+	color: #B1B2C9;
+	margin-bottom: 40px;
+}
+header .center {
+	text-align: center;
+}
+
+header .slogan {
+	font-size: 35px;
+	margin-bottom: 40px;
+}
+
+header .contenedor-botones {
+	display: flex;
+	justify-content:center;
+}
+
+header .btn {
+	margin: 0 10px;
+	display: inline-block;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 5px;
+	transition: .3s ease all;
+}
+
+header .btn.primario {
+	background: var(--color-primario);
+}
+header .btn.primario:hover {
+	background: var(--color-primario-hover);
+}
+
+header .btn.secundario {
+	background: var(--color-secundario);
+}
+header .btn.secundario:hover {
+	background:var(--color-secundario-hover);
+}
+/* --------MAIN-----------*/
+
+main .contenedor {
+	padding: 40px 0;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: 1fr 1fr 1fr;
+	margin: auto;
+	
+}
+
+main .card {
+	background: #FFFFFF;
+	color: #232533;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0px 0px 50px rgba(0,0,0,.1)
+	
+}
+
+main .card img {
+	width: 100%;
+	margin-bottom: 20px;
+}
+
+main .card .texto{
+	margin-bottom: 20px;
+	line-height: 27px;
+
+}
+	
+main .card .contenedor-botones{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 20px;
+}
+main .card .btn{
+	display: inline-block;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	color: #FFFFFF;
+	border-radius: 5px;
+	transition: .3s ease all;
+
+}
+main .card .btn.primario {
+	background: var(--color-primario);
+}
+main .card .btn.primario:hover {
+	background: var(--color-primario-hover);
+}
+
+main .card .btn.secundario {
+	background: var(--color-secundario);
+}
+main .card .btn.secundario:hover {
+	background: var(--color-secundario-hover);
+}
+
+@media screen and (max-width: 500px){
+
+	main .contenedor{
+		padding:40px 10px ;
+		grid-template-columns: none;
+	}
+	header .btn {
+
+		padding: 15px 10px;
+	}
+
+	main .card .contenedor-botones{
+
+		text-align: center;
+
+	}
+	header .contenedor-botones{
+		text-align: center;
+	}
+}
